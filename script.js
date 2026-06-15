@@ -38,11 +38,11 @@ function dragElement(element) {
 
     // Step 8: Set up event listeners for mouse movement (`elementDrag`) and mouse button release (`closeDragElement`).
     document.onmouseup = stopDragging;
-    document.onmousemove = dragElement;
+    document.onmousemove = elementDrag;
   }
 
   // Step 9: Define the `elementDrag` function to calculate the new position of the element based on mouse movement.
-  function dragElement(e) {
+  function elementDrag(e) {
     e = e || window.event;
     e.preventDefault();
     // Step 10: Calculate the new cursor position.
@@ -63,12 +63,12 @@ function dragElement(element) {
   }
 }
 
-if (document.getElementById(elmnt.id + "header")) {
+if (document.getElementById(element.id + "header")) {
 	// if present, the header is where you move the DIV from:
-	document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+	document.getElementById(element.id + "header").onmousedown = dragMouseDown;
 } else {
 	// otherwise, move the DIV from anywhere inside the DIV:
-	elmnt.onmousedown = dragMouseDown;
+	element.onmousedown = dragMouseDown;
 }
 
 
