@@ -63,14 +63,6 @@ function dragElement(element) {
   }
 }
 
-if (document.getElementById(element.id + "header")) {
-	// if present, the header is where you move the DIV from:
-	document.getElementById(element.id + "header").onmousedown = dragMouseDown;
-} else {
-	// otherwise, move the DIV from anywhere inside the DIV:
-	element.onmousedown = dragMouseDown;
-}
-
 
 
 
@@ -85,7 +77,7 @@ function closeWindow(element) {
 
 //open window function
 function openWindow(element) {
-  element.style.display = "flex"
+  element.style.display = "block"
 }
 
 var welcomeScreenClose = document.querySelector("#welcomeclose")
