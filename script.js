@@ -74,3 +74,28 @@ if (document.getElementById(elmnt.id + "header")) {
 
 
 
+
+//open and close window
+var welcomeScreen = document.querySelector("#welcome")
+
+//close window function
+function closeWindow(element) {
+  element.style.display = "none"
+}
+
+//open window function
+function openWindow(element) {
+  element.style.display = "flex"
+}
+
+var welcomeScreenClose = document.querySelector("#welcomeclose")
+
+var welcomeScreenOpen = document.querySelector("#welcomeopen")
+
+welcomeScreenClose.addEventListener("click", function() {
+  closeWindow(welcomeScreen);
+});
+
+welcomeScreenOpen.addEventListener("click", function() {
+  openWindow(welcomeScreen);
+});
