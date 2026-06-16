@@ -1,8 +1,23 @@
-#mydiv {
-    position: absolute;
+.window {
+border:solid; width: 250px;  padding: 20px; background-color: #5d95aa;border-radius: 22px; position:absolute;
 }
 
-#mydivheader {
-    background-color: #FBF5A7;
+
+  .bottom-bar {
+  border:solid;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  height: 60px;          /* adjust height */
+      /* bar color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color:blue
 }
-    
+
+.header {
+  cursor:pointer;
+}
