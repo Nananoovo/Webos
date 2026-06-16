@@ -103,3 +103,23 @@ document.querySelectorAll("[data-close]").forEach(btn => {
     document.getElementById(id).style.display = "none";
   });
 });
+
+//desktop apps
+let selectedIcon = null;
+
+function selectIcon(element) {
+  if (selectedIcon) {
+    selectedIcon.classList.remove("selected");
+  }
+
+  element.classList.add("selected");
+  selectedIcon = element;
+}
+
+function handleIconTap(element) {
+  if (element.classList.contains("selected")) {
+    document.getElementById("welcomeApp").style.display = "block";
+  } else {
+    selectIcon(element);
+  }
+}
