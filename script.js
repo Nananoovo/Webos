@@ -6,7 +6,7 @@ function updateTime() {
     setInterval(updateTime, 1000);
 
     // Make the DIV element draggable:
-dragElement(document.getElementById("welcome"));
+document.querySelectorAll(".window").forEach(dragElement);
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -65,8 +65,6 @@ function dragElement(element) {
 
 
 
-
-
 //open and close window
 var welcomeScreen = document.querySelector("#welcome")
 
@@ -90,4 +88,18 @@ welcomeScreenClose.addEventListener("click", function() {
 
 welcomeScreenOpen.addEventListener("click", function() {
   openWindow(welcomeScreen);
+});
+
+document.querySelectorAll("[data-open]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const id = btn.dataset.open;
+    document.getElementById(id).style.display = "block";
+  });
+});
+
+document.querySelectorAll("[data-close]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const id = btn.dataset.close;
+    document.getElementById(id).style.display = "none";
+  });
 });
