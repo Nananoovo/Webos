@@ -21,3 +21,9 @@ border:solid; width: 250px;  padding: 20px; background-color: #5d95aa;border-rad
 .header {
   cursor:pointer;
 }
+
+.selected {
+
+    background-color: rgb(142, 142, 243);
+    color: white;
+}
