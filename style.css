@@ -1,5 +1,5 @@
 .window {
-border:solid; width: 250px;  padding: 20px; background-color: #5d95aa;border-radius: 22px; position:absolute;
+border:solid;  padding: 20px; background-color: #5d95aa;border-radius: 22px; position:absolute;
 }
 
 
@@ -26,4 +26,9 @@ border:solid; width: 250px;  padding: 20px; background-color: #5d95aa;border-rad
 
     background-color: rgb(142, 142, 243);
     color: white;
+}
+
+
+.hidden {
+  display:none
 }
