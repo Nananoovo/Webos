@@ -29,7 +29,6 @@ transform: translate(-50%, -50%);">
 		<img style="cursor: pointer; width: 32px; height: 32px" src="https://i.pinimg.com/736x/21/73/cc/2173ccf0defc673f130393c5ac91292c.jpg" />
       
 	</p>
-    <div style="cursor: pointer" id="welcomeclose">Close</div>
     	
 
 
@@ -68,16 +67,50 @@ transform: translate(-50%, -50%);">
 
     </p>
 </div>
+
+<div id="welcomeApp2" class="window" style="display: none;">
+  
+  <p>meow</p>
+
+
+
+
+</div>  
+
+
+
+
+
+
     <div class="bottom-bar">
-      <div style="cursor: pointer" id="welcomeopen">open!!</div>
-
-
-      <div class="desktop-icon" onclick="handleIconTap(this)">
+       <button class="desktop-icon"
+        onclick="handleIconTap(this)"
+        data-open="welcome">
     <img src="https://i.pinimg.com/736x/51/9e/6a/519e6ad5071d3e60be05b775413241b9.jpg"
          alt="App Icon"
          style="border-radius: 20px; height: 64px;" />
 
-</div>
+</button>
+
+
+      <button class="desktop-icon"
+        onclick="handleIconTap(this)"
+        data-open="welcomeApp">
+    <img src="https://i.pinimg.com/736x/51/9e/6a/519e6ad5071d3e60be05b775413241b9.jpg"
+         alt="App Icon"
+         style="border-radius: 20px; height: 64px;" />
+
+</button>
+
+
+      <button class="desktop-icon"
+        onclick="handleIconTap(this)"
+        data-open="welcomeApp2">
+    <img src="https://i.pinimg.com/736x/51/9e/6a/519e6ad5071d3e60be05b775413241b9.jpg"
+         alt="App Icon"
+         style="border-radius: 20px; height: 64px;" />
+
+</button>
 
         </div>
      
