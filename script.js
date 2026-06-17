@@ -64,62 +64,23 @@ function dragElement(element) {
 }
 
 
-
-//open and close window
-var welcomeScreen = document.querySelector("#welcome")
-
-//close window function
-function closeWindow(element) {
-  element.style.display = "none"
-}
-
-//open window function
-function openWindow(element) {
-  element.style.display = "block"
-}
-
-var welcomeScreenClose = document.querySelector("#welcomeclose")
-
-var welcomeScreenOpen = document.querySelector("#welcomeopen")
-
-welcomeScreenClose.addEventListener("click", function() {
-  closeWindow(welcomeScreen);
-});
-
-welcomeScreenOpen.addEventListener("click", function() {
-  openWindow(welcomeScreen);
-});
-
+// Open / close windows by clicking desktop icons
 document.querySelectorAll("[data-open]").forEach(btn => {
   btn.addEventListener("click", () => {
-    const id = btn.dataset.open;
-    document.getElementById(id).style.display = "block";
+    const win = document.getElementById(btn.dataset.open);
+
+    if (getComputedStyle(win).display === "none") {
+      win.style.display = "block";
+    } else {
+      win.style.display = "none";
+    }
   });
 });
 
+// Close buttons inside windows
 document.querySelectorAll("[data-close]").forEach(btn => {
   btn.addEventListener("click", () => {
-    const id = btn.dataset.close;
-    document.getElementById(id).style.display = "none";
+    const win = document.getElementById(btn.dataset.close);
+    win.style.display = "none";
   });
 });
-
-//desktop apps
-let selectedIcon = null;
-
-function selectIcon(element) {
-  if (selectedIcon) {
-    selectedIcon.classList.remove("selected");
-  }
-
-  element.classList.add("selected");
-  selectedIcon = element;
-}
-
-function handleIconTap(element) {
-  if (element.classList.contains("selected")) {
-    document.getElementById("welcomeApp").style.display = "block";
-  } else {
-    selectIcon(element);
-  }
-}
