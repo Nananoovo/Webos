@@ -1,6 +1,18 @@
 .window {
-border:solid;  padding: 20px; background-color: #5d95aa;border-radius: 22px; position:absolute;
+
+  border: solid;
+  width: 400px;
+  height: 300px;
+
+  padding: 20px;
+  background-color: #5d95aa;
+  border-radius: 22px;
+  position: absolute;
+
+  resize: both;
+  overflow: auto;
 }
+
 
 
   .bottom-bar {
