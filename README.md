@@ -1,6 +1,7 @@
 # Webos
 My web os for 16 yo! <br> <br>
 finished in about 2-3 weeks, it wasn't hard to make things work but hard to find creativity
+<br> https://nananoovo.github.io/Webos/ <-- click this to view
 <br><br>
 some functions:<br>
 Open and closing window via buttons <br>
@@ -21,3 +22,10 @@ layering the windows<br>
 
 <br><br><br>
 Now it's actually finished!  Kinda proud, maybe
+<br>
+
+
+Credit~<br>
+Stardance! The guild is super helpful<br>
+Chatgpt - Asked for some implementations on top of a basic function that I make, like making it simplier (queryselect）
+
